@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>StationaryCenter: Home</title>
+        <meta name="description" content="CourseWork2">
+        <meta name="keyword" content="Stationary Shop">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            header { height: 15%;
+                clear: both; 
+                background-color:lavenderblush; 
+                text-align: center;
+            }
+    
+            main { width: 100%; 
+                float: right; 
+                padding: 30px;
+                text-align: center;
+                font-family: 'Patrick Hand', 'cursive';
+                font-weight: bold;
+                color: darkslategrey;
+                background-color: white;
+                }
+
+    
+            body{
+                background: lavenderblush;
+                background-image: url("{% static 'stationartbg.jpg' %}");
+                background-size: cover;
+            }
+                
+            .str {
+                text-align: center;
+                padding: 30px;
+                height: 20;
+                font-family: 'Patrick Hand', 'cursive';
+                font-size: 50px;
+                margin: 0px auto;
+                color: rgb(23, 161, 127);
+                font-weight: bold;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a class="login" href="login/"><u>Login</u></a>
+            <a class="str"><h1>StationaryCenter</h1></a>
+
+            <input type="textbox" size="75" >
+            <button type="button">&nbsp Search &nbsp</button>
+            &nbsp&nbsp&nbsp&nbsp
+            <img width="30px" src="{% static 'Shoppingcart.png' %}">
+        </header>
+
+        <main>
+            <a href="pen/"><img src="{% static 'pen.jpg' %}" height="150px"></a>
+            <a href="pencil/"><img src="{% static 'pencil.jpg' %}" height="150px"></a>
+            <a href="colorpencil/"><img src="{% static 'colorpencil.jpg' %}" height="150px"></a>
+            <a href="eraser/"><img src="{% static 'eraser.jpg' %}" height="150px"></a>
+            <a href="notebook/"><img src="{% static 'notebook.webp' %}" height="150px"></a>
+        </main>
+    </body>
+</html>
